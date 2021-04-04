@@ -1,0 +1,39 @@
+footer>p {
+    font-size: 1rem;
+    padding: 0.8rem;
+}
+
+footer>p > i {
+    margin-top: 0.25rem;
+}
+
+footer>a,footer>i
+{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer>a:hover
+{
+    color: white;
+}
+
+footer>h5{
+    color: white;
+    font-size: 2rem;
+}
+
+footer{
+    background-color: #232931;
+    color: rgba(255, 255, 255, 0.7) ;
+    padding-top: 2rem;
+}
+
+footer>.btn.btn-social-icon .fa {
+    font-size: 2rem;
+}
+
+footer>hr {
+    height: 1px;
+    background-color: #91989e;
+    margin-bottom: 0;
+}

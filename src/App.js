@@ -1,8 +1,15 @@
 import './App.css';
+import Footer from './components/Footer'
+import Team from './components/Team'
+
 
 function App() {
   return (
-      <h1>Osmoze</h1>
+      <div>
+        <Team />
+        {/* <Footer /> */}
+      </div>
+
   );
 }
 
