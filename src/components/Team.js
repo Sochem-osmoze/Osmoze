@@ -1,7 +1,5 @@
 import { Component } from 'react';
 import './Team.css';
-// import background from '../../public/assets/images/team_bg.jpg';
-// import { TEAM } from '../shared/team';
 
 class Team extends Component {
     constructor(props) {
@@ -102,9 +100,9 @@ class Team extends Component {
                     <img src={member.image} alt={member.name} />
                 </div>
                 <ul class="team-social-media">
-                    <li><a href={member.fb} target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href={member.insta} target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href={member.linkedin} target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href={member.fb} ><i class="fa fa-facebook"></i></a></li>
+                    <li><a href={member.insta} ><i class="fa fa-instagram"></i></a></li>
+                    <li><a href={member.linkedin} ><i class="fa fa-linkedin"></i></a></li>
                 </ul>
                 <div class="team-member-info">
                     <h2>{member.name}</h2>
