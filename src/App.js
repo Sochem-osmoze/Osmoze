@@ -9,10 +9,10 @@ import HomePage from './components/Homepage'
 function App() {
   return (
       <div>
-        {/* <Team /> */}
+        <Team /> 
         {/*<Owlcarousel />*/}
         {/* <Footer /> */}
-        <HomePage />
+        {/*<HomePage />*/}
       </div>
 
   );
