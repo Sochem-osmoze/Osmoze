@@ -6,12 +6,13 @@ import HomePage from './components/Homepage'
 import Announcement from './components/Announcement'
 import {Switch, Route} from 'react-router-dom'
 import Navbar from './components/Navbar'
-
+import NewNavBar from './components/newnavbar'
 
 function App() {
   return (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
+        <NewNavBar />
         <Switch>
         <Route exact path = "/" component = {HomePage}/>
         <Route exact path = "/team" component = {Team}/>

@@ -82,7 +82,7 @@ class Team extends Component {
                     id: 8,
                     name: 'Abhishek Kumar Meena',
                     designation:'Events Head',
-                    image: '/assets/images/team/Abhishek.jpg',
+                    image: '/assets/images/team/Abhishek.jpeg',
                     fb:'https://www.facebook.com/abhishek.meena.56829446',
                     insta:'https://www.instagram.com/abhishek_k_umar/',
                     linkedin:'{#}',

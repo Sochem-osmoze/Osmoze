@@ -7,14 +7,15 @@ const Navbar = () =>{
     return(
         <>
             <header id="header" class="d-flex align-items-center ">
-                <div class="container-fluid container-xxl d-flex align-items-center">
+                <div class="container-fluid container-xxl ">
 
-                <div id="logo" class="me-auto">
-                    <img src="public\assets\images\logo.png" alt="" title=""/>
+                <div id="logo" class="me-auto ">
+                    Osmoze
+                    {/* <img src="public\assets\images\logo.png" alt="" title=""/> */}
                 </div>
 
-                <nav id="navbar" class="navbar order-last order-lg-0">
-                    <ul>
+                <nav id="navbar" class="navbar order-last order-lg-0 d-flex justify-content-end">
+                    <ul className="">
                     <li><NavLink class="nav-link scrollto active" to="/">Home</NavLink></li>
                     <li><a class="nav-link scrollto" href="#about">About Us</a></li>
                     <li><a class="nav-link scrollto" href="https://events.osmoze.in/#/events/main/dashboard">Events</a></li>

@@ -1,0 +1,31 @@
+
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(202, 206, 221, 0.8);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: whitesmoke;
+}
+
+.navbar-light .navbar-brand {
+    margin-left: 3rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.navbar-light .navbar-brand span {
+    color: #fbb901;
+}
+
+.navbar-light .navbar-brand:hover {
+    /* margin-left: 3rem; */
+    font-size: 2rem;
+    color: #fbb901;
+}
+
+.navbar-light .navbar-brand:hover span {
+    color: white;
+}
