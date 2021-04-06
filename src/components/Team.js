@@ -28,7 +28,7 @@ class Team extends Component {
                     id: 2,
                     name: 'Ajeet Patel',
                     designation:'Facilitator',
-                    image: '/assets/images/team/Ajeet.jpg',
+                    image: '/assets/images/team/ajeet.jpg',
                     fb:'https://www.facebook.com/ajeet.patel.549668',
                     insta:'https://www.instagram.com/i__am_heisenberg_/',
                     linkedin:'https://www.linkedin.com/in/ajeet-patel-b4a493189/',
@@ -109,11 +109,18 @@ class Team extends Component {
                     <span>{member.designation}</span>
                 </div>
             </div>
+            
 
             );
         } )
 
         return(
+            
+            <div id="star">
+            <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
             <div id="team" >
                 <div class="container">
                     <div class="row">
@@ -129,6 +136,7 @@ class Team extends Component {
                     </div>
                 </div>
             </div>
+            </div>
         );
     }
 
@@ -136,4 +144,4 @@ class Team extends Component {
 
 }
 
-export default Team
+export default Team;
