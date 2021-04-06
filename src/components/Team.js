@@ -28,7 +28,7 @@ class Team extends Component {
                     id: 2,
                     name: 'Ajeet Patel',
                     designation:'Facilitator',
-                    image: '/assets/images/team/Ajeet.jpg',
+                    image: '/assets/images/team/ajeet.jpg',
                     fb:'https://www.facebook.com/ajeet.patel.549668',
                     insta:'https://www.instagram.com/i__am_heisenberg_/',
                     linkedin:'https://www.linkedin.com/in/ajeet-patel-b4a493189/',
