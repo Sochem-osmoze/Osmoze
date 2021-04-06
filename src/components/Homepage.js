@@ -24,7 +24,7 @@ const HomePage = () =>{
         <div class="row">
           <div class="col-lg-6">
             <h2>About The Event</h2>
-            <p>Osmoze is the annual technical extravaganza organized by the Department of Chemical engineering, IIT BHU, Varanasi. We intend to provide a competitive platform for honing technical and professional skills of students, especially those interested in chemical engineering. Flagship contests of the festival include Chem-e-boat – competition of running boats through chemical reactions, Rachna – an industrial process designing contest, Case studies and IDP sponsored by industries, and a veritable potpourri of events to nurture the engineering professional inside you.
+            <p id="aboutEvent">Osmoze is the annual technical extravaganza organized by the Department of Chemical engineering, IIT BHU, Varanasi. We intend to provide a competitive platform for honing technical and professional skills of students, especially those interested in chemical engineering. Flagship contests of the festival include Chem-e-boat – competition of running boats through chemical reactions, Rachna – an industrial process designing contest, Case studies and IDP sponsored by industries, and a veritable potpourri of events to nurture the engineering professional inside you.
                                 Osmoze is the perfect platform to enhance your professional skills and experience a unique atmosphere of creativity and innovation. So mark your calendar for 3rd-5th April and get ready for this one of a kind fest.</p>
           </div>
           <div class="col-lg-6">
