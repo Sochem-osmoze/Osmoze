@@ -20,19 +20,19 @@ class Owlcarousel extends Component {
                 },
                 {
                     id: 3,
-                    location: '/assets/images/gallery/4.jpg',
+                    location: '/assets/images/gallery/4.JPG',
                 },
                 {
                     id: 4,
-                    location: '/assets/images/gallery/5.jpg',
+                    location: '/assets/images/gallery/5.JPG',
                 },
                 {
                     id: 5,
-                    location: '/assets/images/gallery/6.jpg',
+                    location: '/assets/images/gallery/6.JPG',
                 },
                 {
                     id: 6,
-                    location: '/assets/images/gallery/7.jpg',
+                    location: '/assets/images/gallery/7.JPG',
                 }
             ],
         };
