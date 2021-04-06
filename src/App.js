@@ -3,16 +3,20 @@ import Footer from './components/Footer'
 import Team from './components/Team'
 import Owlcarousel from './components/Owlcarousel'
 import HomePage from './components/Homepage'
-
+import Announcement from './components/Announcement'
 
 
 function App() {
   return (
       <div>
-        <Team /> 
         {/*<Owlcarousel />*/}
         {/* <Footer /> */}
         {/*<HomePage />*/}
+        <HomePage />
+        <Team />
+        <Owlcarousel />
+        <Announcement />
+        <Footer />
       </div>
 
   );
