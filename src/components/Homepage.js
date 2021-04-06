@@ -1,5 +1,6 @@
 import React from  'react'
 import CircularTimer from './Timer'
+import Owlcarousel from './Owlcarousel'
 import '../css/homepage.css'
 
 const HomePage = () =>{
@@ -27,7 +28,7 @@ const HomePage = () =>{
                                 Osmoze is the perfect platform to enhance your professional skills and experience a unique atmosphere of creativity and innovation. So mark your calendar for 3rd-5th April and get ready for this one of a kind fest.</p>
           </div>
           <div class="col-lg-6">
-          <img src = "../images/osmoze-about_1.jpg"></img>
+          <Owlcarousel />
             </div>
         </div>
       </div>
