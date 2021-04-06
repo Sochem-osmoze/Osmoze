@@ -20,9 +20,6 @@ const Navbar = () =>{
                     <li><a class="nav-link scrollto" href="https://events.osmoze.in/#/events/main/dashboard">Events</a></li>
                     <li><NavLink class="nav-link scrollto" to="/announcement">Announcement</NavLink></li>
                     <li><NavLink class="nav-link scrollto" to="/team">Team</NavLink></li>
-                    
-                    
-                    
                     </ul>
                     </nav>
                 </div>
