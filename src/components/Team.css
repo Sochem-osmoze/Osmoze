@@ -34,7 +34,7 @@
 
 .team-info {
   position: relative;
-  height: 285px;
+  height: 16rem;
   overflow: hidden;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
   transition: box-shadow 0.3s ease-out;

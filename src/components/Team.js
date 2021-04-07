@@ -9,7 +9,7 @@ class Team extends Component {
                 {
                     id: 0,
                     name: 'Anmol Gupta',
-                    designation:'Vice-President(students)',
+                    designation:'Vice-President',
                     image: '/assets/images/team/Anmol.jpg',
                     fb:'https://www.facebook.com/anmolg.gupta',
                     insta:'https://www.instagram.com/_anmol.gupta__/',
