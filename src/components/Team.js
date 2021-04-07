@@ -95,7 +95,7 @@ class Team extends Component {
 
         const team = this.state.members.map((member)=> {
             return(
-                <div class="team-info col-md-3 mx-2 col-sm-6 col-xs-6 m-2" key={member.id} id={member.id}>
+                <div class="team-info col-md-3 mx-md-3 col-sm-3 col-xs-3 mx-5" key={member.id} id={member.id}>
                 <div class="team-member-img">
                     <img src={member.image} alt={member.name} />
                 </div>
@@ -121,7 +121,7 @@ class Team extends Component {
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
-            <div id="team" >
+            <div id="team" className="container">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-md-offset-0 d-flex justify-content-center">
@@ -131,8 +131,10 @@ class Team extends Component {
                         </div>
 
                     </div>
+                    <div className="container">
                     <div className="row d-flex justify-content-around">
                         {team}
+                    </div>
                     </div>
                 </div>
             </div>
