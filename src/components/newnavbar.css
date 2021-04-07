@@ -45,6 +45,6 @@
     background-color: #c8bae8;
 }
 
-.modal-body a {
+.modal-body a ,a:not([href]):not([tabindex]){
     color: whitesmoke;
 }
