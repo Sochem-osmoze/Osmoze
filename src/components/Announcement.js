@@ -22,9 +22,31 @@ function Announcement(){
                   <div className="container-fluid">
                  <Timeline >
 					{/* take care of order */}
+					
+					<TimelineItem
+						key="004"
+						dateText="04 April 2021"
+						dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
+						bodyContainerStyle={{background: '#ddd',padding: '20px',borderRadius: '8px',boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+					}}>
+						<div>
+							<div className="timeline-item">
+								<h3 className="timeline-header">Osmocross #1 Result</h3>
+								<div className="timeline-body">
+								OsmoCross #1 held on 2nd April saw some nail biting competition.
+								<ol>
+									<li>Prince 20045093</li>
+									<li>Vedant Chitnis 20045139</li>
+									<li>Kushagra Singh 18045059</li>
+								</ol>
+								Get ready for the more exciting OsmoCross 2 coming on 9th April.
+								</div>
+							</div>
+						</div>
+                    </TimelineItem>
 
 					<TimelineItem
-						key="002"
+						key="003"
 						dateText="28 March 2021"
 						dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
 						bodyContainerStyle={{background: '#ddd',padding: '20px',borderRadius: '8px',boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
