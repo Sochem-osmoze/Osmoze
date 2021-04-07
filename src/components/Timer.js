@@ -11,12 +11,14 @@ const timerProps = {
   size: 120,
   strokeWidth: 6
 };
-
 const renderTime = (dimension, time) => {
+  
+var wid = window.innerWidth;
+const fontSiz = wid<500 ? wid/16:60;
   return (
     <div className="time-wrapper">
-      <div className="time">{time}</div>
-      <div>{dimension}</div>
+      <div className="time" style={{fontSize: fontSiz}}>{time}</div>
+      <div style={{fontSize: fontSiz/2}}>{dimension}</div>
     </div>
   );
 };
@@ -27,12 +29,15 @@ const getTimeHours = (time) => ((time % daySeconds) / hourSeconds) | 0;
 const getTimeDays = (time) => (time / daySeconds) | 0;
 
 const CircularTimer = () => {
+  var wid = window.innerWidth;
+  console.log(wid);
   const stratTime = Date.now()/1000; // use UNIX timestamp in seconds
   const endTime = new Date(2021, 3, 15, 17).getTime()/1000; // use UNIX timestamp in seconds
 
   const remainingTime = endTime - stratTime;
   const days = Math.ceil(remainingTime / daySeconds);
   const daysDuration = days * daySeconds;
+  const sizeCircle = wid < 500 ? (wid-10)/4:180;
 
   return (
     <div className="circular_timer">
@@ -41,6 +46,7 @@ const CircularTimer = () => {
         colors={[["#7E2E84"]]}
         duration={daysDuration}
         initialRemainingTime={remainingTime}
+        size={sizeCircle}
       >
         {({ elapsedTime }) =>
           renderTime("days", getTimeDays(daysDuration - elapsedTime))
@@ -51,6 +57,7 @@ const CircularTimer = () => {
         colors={[["#D14081"]]}
         duration={daySeconds}
         initialRemainingTime={remainingTime % daySeconds}
+        size={sizeCircle}
         onComplete={(totalElapsedTime) => [
           remainingTime - totalElapsedTime > hourSeconds
         ]}
@@ -59,11 +66,13 @@ const CircularTimer = () => {
           renderTime("hours", getTimeHours(daySeconds - elapsedTime))
         }
       </CountdownCircleTimer>
+      
       <CountdownCircleTimer
         {...timerProps}
         colors={[["#EF798A"]]}
         duration={hourSeconds}
         initialRemainingTime={remainingTime % hourSeconds}
+        size={sizeCircle}
         onComplete={(totalElapsedTime) => [
           remainingTime - totalElapsedTime > minuteSeconds
         ]}
@@ -77,6 +86,7 @@ const CircularTimer = () => {
         colors={[["#218380"]]}
         duration={minuteSeconds}
         initialRemainingTime={remainingTime % minuteSeconds}
+        size={sizeCircle}
         onComplete={(totalElapsedTime) => [
           remainingTime - totalElapsedTime > 0
         ]}
