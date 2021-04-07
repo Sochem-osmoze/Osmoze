@@ -51,7 +51,6 @@ function Navbar(){
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
-                    
                     <div class="modal-content" style={{backgroundColor:'transparent'}}>
                         <div class="modal-header d-flex justify-content-end">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>

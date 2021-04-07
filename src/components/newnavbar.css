@@ -2,10 +2,11 @@
 
 .navbar {
     font-family: 'Karla', sans-serif;
-    /* background-color: yellow; */
+    background-color: rgb(53,58,74);
     font-size: 1.4rem;
     font-weight: 900;
     margin: 0;
+    top: 0;
     padding: 0.2rem;
 }
 
@@ -46,5 +47,10 @@
 }
 
 .modal-body a ,a:not([href]):not([tabindex]){
-    color: whitesmoke;
+    color: rgba(245,245,245,0.6);
+}
+
+button.close {
+    border-radius: 3px;
+    background-color: white;
 }

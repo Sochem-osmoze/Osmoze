@@ -95,7 +95,7 @@ class Team extends Component {
 
         const team = this.state.members.map((member)=> {
             return(
-                <div class="team-info col-md-3 col-sm-6 col-xs-6 m-2" key={member.id} id={member.id}>
+                <div class="team-info col-md-3 mx-2 col-sm-6 col-xs-6 m-2" key={member.id} id={member.id}>
                 <div class="team-member-img">
                     <img src={member.image} alt={member.name} />
                 </div>
