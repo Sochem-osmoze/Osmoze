@@ -4,7 +4,7 @@ import '../css/announcement.css'
 
 function Announcement(){
     return(
-        <div id="star">
+        <div className="mt-5" id="star">
 			<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
 			<div id='stars'></div>
 			<div id='stars2'></div>
@@ -54,7 +54,7 @@ function Announcement(){
 								Dipped in hues of love and trust, the festival of colors is here. Team Osmoze sends you best wishes for a Holi filled with sweet moments and memories to cherish for long.<br/>
 								Osmoze is just about a month away, and we are all set to launch yet another exciting pre-event — Osmo-Click.<br/>
 								It's an online contest where you must send photos of any events/activities in our daily lives that resemble any chemical phenomenon and provide a proper explanation for the same.<br/>
-								Send your entries on - <a href="https://www.instagram.com/sochem_iitbhu/">https://www.instagram.com/sochem_iitbhu/</a>
+								Send your entries <a href="https://www.instagram.com/sochem_iitbhu/">here!</a>
 								</div>
 							</div>
 						</div>

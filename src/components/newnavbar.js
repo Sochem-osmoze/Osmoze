@@ -9,19 +9,19 @@ function Navbar(){
             <div className="">
                 <ul className="navbar-nav">
                     <li className="nav-item" href="#">
-                         <a id="navbar-main-text" className="nav-link" name="home" onClick={()=> {window.location='/'}}>Home</a>
+                         <a href="#" id="navbar-main-text" className="nav-link" name="home" onClick={()=> {window.location='/'}}>Home</a>
                     </li>
-                    <li className="nav-item" href="#">
-                        <a className="nav-link" name="events" onClick={()=> {window.location='/#about'}}>About Us</a>
+                    <li className="nav-item">
+                        <a className="nav-link" name="events" onClick={()=> {window.location='/#about'}} href="/#about">About Us</a>
                     </li>
                     <li className="nav-item" href="#">
                         <a className="nav-link" name="forum" href="https://events.osmoze.in/#/events/main/dashboard" >Events</a>
                     </li>
                     <li className="nav-item" href="#">
-                        <a className="nav-link" name="cloud" onClick={()=> {window.location='/announcement'}}>Announcement</a>
+                        <a href="#" className="nav-link" name="cloud" onClick={()=> {window.location='/announcement'}}>Announcement</a>
                     </li>
                     <li className="nav-item" href="#">
-                        <a className="nav-link" name="people" onClick={()=> {window.location='/team'}}>Team</a>
+                        <a href="#" className="nav-link" name="people" onClick={()=> {window.location='/team'}}>Team</a>
                     </li>                  
                 </ul>
             </div>
@@ -43,7 +43,7 @@ function Navbar(){
             </div>
 
 
-            <div id="navbar-model" class="modal fade container" role="dialog">
+            <div id="navbar-model" class="modal fade" role="dialog">
                 <div class="modal-dialog modal-lg" role="content">
                     
                 <div id="star">
