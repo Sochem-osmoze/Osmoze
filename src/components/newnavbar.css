@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Krona+One&display=swap');
 
+.navbar {
+    font-family: 'Karla', sans-serif;
+    /* background-color: yellow; */
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0.2rem;
+}
 
-
+.nav-item {
+    margin-right: 2rem;
+}
 
 .navbar-light .navbar-nav .nav-link {
     color: rgba(202, 206, 221, 0.8);
@@ -28,4 +39,12 @@
 
 .navbar-light .navbar-brand:hover span {
     color: white;
+}
+
+#nav-collaps-button{
+    background-color: #c8bae8;
+}
+
+.modal-body a {
+    color: whitesmoke;
 }

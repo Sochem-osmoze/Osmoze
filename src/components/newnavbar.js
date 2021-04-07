@@ -1,34 +1,70 @@
-import './newnavbar.css'
+import React from 'react';
+import './newnavbar.css';
 
-function NewNavBar() {
-    return(
-        <div>
-        <nav className="navbar fixed-top navbar-expand-lg navbar-light mt-2">
-            <a href="#" className="navbar-brand ml-5" id="nbrand" name="home" onClick={()=> {window.location='/'}}>Osm<span>oze</span></a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>                
-            </button>
-            <div className="collapse navbar-collapse mr-5" id="navbarNav">
-                <ul className="navbar-nav ml-auto">
-                    <a className="nav-item " href="#">
-                        <a id="navbar-main-text" className="nav-link" name="home" onClick={()=> {window.location='/'}}>Home</a>
-                    </a>
-                    <a className="nav-item" href="#about">
-                        <a className="nav-link scrollto" name="events" onClick={()=> {window.location='/#about'}}>About Us</a>
-                    </a>
-                    <a className="nav-item" href="https://events.osmoze.in/#/events/main/dashboard">
-                        <a className="nav-link" name="forum" >Events</a>
-                    </a>
-                    <a className="nav-item" href="#">
+
+function Navbar(){   
+
+    function navbarcontent(){
+        return(
+            <div className="">
+                <ul className="navbar-nav">
+                    <li className="nav-item" href="#">
+                         <a id="navbar-main-text" className="nav-link" name="home" onClick={()=> {window.location='/'}}>Home</a>
+                    </li>
+                    <li className="nav-item" href="#">
+                        <a className="nav-link" name="events" onClick={()=> {window.location='/#about'}}>About Us</a>
+                    </li>
+                    <li className="nav-item" href="#">
+                        <a className="nav-link" name="forum" href="https://events.osmoze.in/#/events/main/dashboard" >Events</a>
+                    </li>
+                    <li className="nav-item" href="#">
                         <a className="nav-link" name="cloud" onClick={()=> {window.location='/announcement'}}>Announcement</a>
-                    </a>
-                    <a className="nav-item" href="#">
+                    </li>
+                    <li className="nav-item" href="#">
                         <a className="nav-link" name="people" onClick={()=> {window.location='/team'}}>Team</a>
-                    </a>
+                    </li>                  
                 </ul>
             </div>
-        </nav>       
-</div>
+        );
+    }
+
+    return (
+        <div>
+            <div>
+                <nav className="navbar fixed-top navbar-expand-lg navbar-light " id="main_nav">
+                    <a href="#" className="navbar-brand" id="nbrand" name="home" onClick={()=> {window.location='/'}}>Osm<span>oze</span></a>
+                    <button id="nav-collaps-button" className=" navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-toggle="modal" data-target="#navbar-model">
+                        <span className="navbar-toggler-icon"></span>                
+                    </button>
+                    <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                        {navbarcontent()}
+                    </div>
+                </nav>     
+            </div>
+
+
+            <div id="navbar-model" class="modal fade container" role="dialog">
+                <div class="modal-dialog modal-lg" role="content">
+                    
+                <div id="star">
+            <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+                    
+                    <div class="modal-content" style={{backgroundColor:'transparent'}}>
+                        <div class="modal-header d-flex justify-content-end">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            {navbarcontent()}
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
     );
 }
-export default NewNavBar
+
+export default Navbar;
