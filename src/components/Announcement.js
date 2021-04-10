@@ -22,6 +22,46 @@ function Announcement(){
                   <div className="container-fluid">
                  <Timeline >
 					{/* take care of order */}
+
+					<TimelineItem
+						key="007"
+						dateText="10 April 2021"
+						dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
+						bodyContainerStyle={{background: '#ddd',padding: '20px',borderRadius: '8px',boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+					}}>
+						<div>
+							<div className="timeline-item">
+								<h3 className="timeline-header">Osmocross #2 Result</h3>
+								<div className="timeline-body">
+								OsmoCross #2 held on 9nd April saw some nail biting competition.
+								<ol>
+									<li>Nisha Agrawal 17045010</li>
+									<li>Harshit Bhati 19045052</li>
+									<li>Hritik Kumar 19045053</li>
+								</ol>
+								{/* Get ready for the more exciting OsmoCross 2 coming on 9th April. */}
+								</div>
+							</div>
+						</div>
+                    </TimelineItem>
+
+					<TimelineItem
+						key="006"
+						dateText="09 April 2021"
+						dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
+						bodyContainerStyle={{background: '#ddd',padding: '20px',borderRadius: '8px',boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+					}}>
+						<div>
+							<div className="timeline-item">
+								<h3 className="timeline-header">Guest Talk</h3>
+								<div className="timeline-body">
+								Join us in the talk given by <b>Mr. Mehul Bapat</b>, an esteemed alumnus of IIT(BHU) Varanasi, and currently working as a research assistant at Carnegie Mellon University, USA.
+								<br/><br/>Join us on the <b>11th of April at 8PM!</b>
+								</div>
+							</div>
+						</div>
+                    </TimelineItem>
+
 					<TimelineItem
 						key="005"
 						dateText="07 April 2021"
@@ -41,6 +81,7 @@ function Announcement(){
 							</div>
 						</div>
                     </TimelineItem>
+					
 					<TimelineItem
 						key="004"
 						dateText="04 April 2021"
