@@ -4,7 +4,7 @@ import Team from './components/Team'
 import HomePage from './components/Homepage'
 import Announcement from './components/Announcement'
 import {Switch, Route} from 'react-router-dom'
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 import NewNavBar from './components/newnavbar'
 
 function App() {
