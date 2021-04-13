@@ -30,9 +30,9 @@ const getTimeDays = (time) => (time / daySeconds) | 0;
 
 const CircularTimer = () => {
   var wid = window.innerWidth;
-  console.log(wid);
+  // console.log(wid);
   const stratTime = Date.now()/1000; // use UNIX timestamp in seconds
-  const endTime = new Date(2021, 3, 15, 17).getTime()/1000; // use UNIX timestamp in seconds
+  const endTime = new Date(2021, 3, 16, 17).getTime()/1000; // use UNIX timestamp in seconds
 
   const remainingTime = endTime - stratTime;
   const days = Math.ceil(remainingTime / daySeconds);
