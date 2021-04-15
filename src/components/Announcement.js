@@ -24,6 +24,25 @@ function Announcement(){
 					{/* take care of order */}
 
 					<TimelineItem
+						key="009"
+						dateText="15 April 2021"
+						dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
+						bodyContainerStyle={{background: '#ddd',padding: '20px',borderRadius: '8px',boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+					}}>
+						<div>
+							<div className="timeline-item">
+								<h3 className="timeline-header">Results</h3>
+								<div className="timeline-body">
+									Round I Results are out for
+									<a href="https://events.osmoze.in/#/events/Adhyayan"> Adhyayans </a> 
+								 	and 
+								 	<a href="https://events.osmoze.in/#/events/Chemathon"> Chemathon </a>
+								</div>
+							</div>
+						</div>
+                    </TimelineItem>
+
+					<TimelineItem
 						key="008"
 						dateText="11 April 2021"
 						dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
@@ -38,7 +57,6 @@ function Announcement(){
 								Get yourself registered for 
 									<a href="https://events.osmoze.in/#/events/Adhyayan"> ADHYAYAN </a> 
 								 	and 
-
 								 	<a href="https://events.osmoze.in/#/events/Udyog"> UDYOG </a>
 								</div>
 							</div>
